@@ -183,5 +183,53 @@
     "tentativas": 1,
     "mediaId": "17862890466693287",
     "link": ""
+  },
+  "story:5-duvidas/04-faq-4.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:46:36.916Z",
+    "tentativas": 1,
+    "mediaId": "18134852932633534",
+    "link": ""
+  },
+  "story:5-duvidas/05-faq-5.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:46:44.807Z",
+    "tentativas": 1,
+    "mediaId": "18129496786809773",
+    "link": ""
+  },
+  "story:5-duvidas/06-faq-6.jpg@destaques": {
+    "status": "erro",
+    "em": "2026-10-05T19:46:49.826Z",
+    "tentativas": 1,
+    "erro": "/17841424760671838/media_publish: The requested resource does not exist (code 24)"
+  },
+  "story:6-materiais/01-capa.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:46:56.354Z",
+    "tentativas": 1,
+    "mediaId": "18114422264467962",
+    "link": ""
+  },
+  "story:6-materiais/02-capas.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:47:09.228Z",
+    "tentativas": 1,
+    "mediaId": "17924761938429989",
+    "link": ""
+  },
+  "story:7-clientes/01-capa.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:47:22.222Z",
+    "tentativas": 1,
+    "mediaId": "17904341688592659",
+    "link": ""
+  },
+  "story:7-clientes/02-arnaldo.mp4@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:48:03.368Z",
+    "tentativas": 1,
+    "mediaId": "18344220043254044",
+    "link": ""
   }
 }

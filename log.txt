@@ -26,3 +26,10 @@
 2026-10-05T19:32:31.235Z OK story:3-jordao/04-metodo.jpg@destaques 
 2026-10-05T19:32:44.163Z OK story:4-planos/01-capa.jpg@destaques 
 2026-10-05T19:32:56.825Z OK story:4-planos/02-precos.jpg@destaques 
+2026-10-05T19:46:36.916Z OK story:5-duvidas/04-faq-4.jpg@destaques 
+2026-10-05T19:46:44.807Z OK story:5-duvidas/05-faq-5.jpg@destaques 
+2026-10-05T19:46:49.826Z ERRO story:5-duvidas/06-faq-6.jpg@destaques (tentativa 1/3) /17841424760671838/media_publish: The requested resource does not exist (code 24)
+2026-10-05T19:46:56.354Z OK story:6-materiais/01-capa.jpg@destaques 
+2026-10-05T19:47:09.228Z OK story:6-materiais/02-capas.jpg@destaques 
+2026-10-05T19:47:22.222Z OK story:7-clientes/01-capa.jpg@destaques 
+2026-10-05T19:48:03.368Z OK story:7-clientes/02-arnaldo.mp4@destaques 
