@@ -33,3 +33,13 @@
 2026-10-05T19:47:09.228Z OK story:6-materiais/02-capas.jpg@destaques 
 2026-10-05T19:47:22.222Z OK story:7-clientes/01-capa.jpg@destaques 
 2026-10-05T19:48:03.368Z OK story:7-clientes/02-arnaldo.mp4@destaques 
+2026-10-05T20:02:18.240Z OK story:4-planos/03-o-que-vem.jpg@destaques 
+2026-10-05T20:02:29.374Z OK story:4-planos/04-anual.jpg@destaques 
+2026-10-05T20:02:41.040Z OK story:4-planos/05-time.jpg@destaques 
+2026-10-05T20:02:53.902Z OK story:5-duvidas/01-faq-1.jpg@destaques 
+2026-10-05T20:03:07.082Z OK story:5-duvidas/02-faq-2.jpg@destaques 
+2026-10-05T20:03:18.835Z OK story:5-duvidas/03-faq-3.jpg@destaques 
+2026-10-05T20:03:32.330Z OK story:5-duvidas/06-faq-6.jpg@destaques 
+2026-10-05T20:04:34.455Z OK story:7-clientes/03-danilo.mp4@destaques 
+2026-10-05T20:05:52.415Z OK story:7-clientes/04-marcos-ia.mp4@destaques 
+2026-10-05T20:06:27.732Z OK story:7-clientes/05-marcos-jordao.mp4@destaques 

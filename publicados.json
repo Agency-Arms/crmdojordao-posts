@@ -199,10 +199,11 @@
     "link": ""
   },
   "story:5-duvidas/06-faq-6.jpg@destaques": {
-    "status": "erro",
-    "em": "2026-10-05T19:46:49.826Z",
-    "tentativas": 1,
-    "erro": "/17841424760671838/media_publish: The requested resource does not exist (code 24)"
+    "status": "ok",
+    "em": "2026-10-05T20:03:32.330Z",
+    "tentativas": 2,
+    "mediaId": "18109669151137531",
+    "link": ""
   },
   "story:6-materiais/01-capa.jpg@destaques": {
     "status": "ok",
@@ -230,6 +231,69 @@
     "em": "2026-10-05T19:48:03.368Z",
     "tentativas": 1,
     "mediaId": "18344220043254044",
+    "link": ""
+  },
+  "story:4-planos/03-o-que-vem.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T20:02:18.240Z",
+    "tentativas": 1,
+    "mediaId": "18156550675513360",
+    "link": ""
+  },
+  "story:4-planos/04-anual.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T20:02:29.374Z",
+    "tentativas": 1,
+    "mediaId": "17938588083379738",
+    "link": ""
+  },
+  "story:4-planos/05-time.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T20:02:41.040Z",
+    "tentativas": 1,
+    "mediaId": "18124009894915177",
+    "link": ""
+  },
+  "story:5-duvidas/01-faq-1.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T20:02:53.902Z",
+    "tentativas": 1,
+    "mediaId": "18179168299437820",
+    "link": ""
+  },
+  "story:5-duvidas/02-faq-2.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T20:03:07.082Z",
+    "tentativas": 1,
+    "mediaId": "17997163179001063",
+    "link": ""
+  },
+  "story:5-duvidas/03-faq-3.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T20:03:18.835Z",
+    "tentativas": 1,
+    "mediaId": "18477106081115658",
+    "link": ""
+  },
+  "story:7-clientes/03-danilo.mp4@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T20:04:34.455Z",
+    "tentativas": 1,
+    "mediaId": "18074531852740665",
+    "link": ""
+  },
+  "story:7-clientes/04-marcos-ia.mp4@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T20:05:52.415Z",
+    "tentativas": 1,
+    "mediaId": "17997491894825426",
+    "link": ""
+  },
+  "story:7-clientes/05-marcos-jordao.mp4@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T20:06:27.732Z",
+    "tentativas": 1,
+    "mediaId": "18072144788749771",
     "link": ""
   }
 }
