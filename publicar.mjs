@@ -14,8 +14,11 @@ import { fileURLToPath } from "node:url";
 
 const RAIZ = dirname(fileURLToPath(import.meta.url));
 const FILA = join(RAIZ, "fila.json");
-const FEITOS = join(RAIZ, "publicados.json");
-const LOG = join(RAIZ, "log.txt");
+// No servidor do CRM o repositório é só leitura: o registro vive em ESTADO_DIR (fora do git) e soma o histórico do repo.
+const ESTADO = process.env.ESTADO_DIR || "";
+const FEITOS = ESTADO ? join(ESTADO, "publicados.json") : join(RAIZ, "publicados.json");
+const HIST = ESTADO ? join(RAIZ, "publicados.json") : "";
+const LOG = ESTADO ? join(ESTADO, "log.txt") : join(RAIZ, "log.txt");
 const API = "https://graph.facebook.com/v25.0";
 const JANELA_MIN = 45; // item vencido há mais de 45 min não sai sozinho · cron parado não vira rajada
 const MAX_POR_RODADA = 2; // posts de feed
@@ -87,7 +90,7 @@ async function publicarIG(item) {
 
 const cmd = process.argv[2];
 const fila = ler(FILA, []);
-const feitos = ler(FEITOS, {});
+const feitos = { ...(HIST ? ler(HIST, {}) : {}), ...ler(FEITOS, {}) };
 const pend = fila.filter((x) => x.aprovado && !feitos[x.id]);
 
 if (cmd === "check") {

@@ -19,3 +19,6 @@ O token fica em secret do repositório, nunca no código.
 6. No máximo 2 publicações por rodada, e item vencido há mais de 45 min não sai sozinho.
 7. Story não tem legenda pra comparar: antes de publicar, o publicador lê os stories no ar. Se existe um story sem registro publicado depois do horário do item, assume que é ele e não repete; aparece no `dry` como "conferir".
 8. O registro (`publicados.json`) é gravado mesmo se a publicação der erro, com 3 tentativas de push.
+
+## Onde roda
+No servidor do CRM do Jordão, a cada 5 min (cron instalado pelo deploy do repo crm-do-jordao). Lá o repositório é só leitura: o registro do que saiu fica em /opt/ig-crmdojordao/estado (publicados.json e log.txt) e soma o histórico deste repo. Este workflow do GitHub ficou só manual, de reserva (o agendamento do GitHub não disparou em 05/10).

@@ -1,7 +1,6 @@
 name: publicar
+# Manual (reserva). O agendamento roda no servidor do CRM (cron a cada 5 min, ver README).
 on:
-  schedule:
-    - cron: "*/10 * * * *"
   workflow_dispatch: {}
 permissions:
   contents: write
