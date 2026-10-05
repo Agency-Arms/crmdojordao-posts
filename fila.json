@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "P9-carrossel-pra-quem-e@grade",
+    "quando": "2026-10-05T16:18:05.904Z",
+    "pasta": "midia/01-grade-inicial/P9-carrossel-pra-quem-e",
+    "aprovado": true
+  },
+  {
+    "id": "P8-carrossel-faz-a-conta@grade",
+    "quando": "2026-10-05T16:26:22.562Z",
+    "pasta": "midia/01-grade-inicial/P8-carrossel-faz-a-conta",
+    "aprovado": true
+  },
+  {
+    "id": "P7-carrossel-7-erros@grade",
+    "quando": "2026-10-05T16:29:22.562Z",
+    "pasta": "midia/01-grade-inicial/P7-carrossel-7-erros",
+    "aprovado": true
+  },
+  {
+    "id": "P6-carrossel-antes-depois@grade",
+    "quando": "2026-10-05T16:32:22.562Z",
+    "pasta": "midia/01-grade-inicial/P6-carrossel-antes-depois",
+    "aprovado": true
+  },
+  {
+    "id": "P5-reel-tudo-que-vem@grade",
+    "quando": "2026-10-05T16:35:22.562Z",
+    "pasta": "midia/01-grade-inicial/P5-reel-tudo-que-vem",
+    "aprovado": true
+  },
+  {
+    "id": "P4-carrossel-5-follow-ups@grade",
+    "quando": "2026-10-05T16:38:22.562Z",
+    "pasta": "midia/01-grade-inicial/P4-carrossel-5-follow-ups",
+    "aprovado": true
+  },
+  {
+    "id": "P3-carrossel-negociacao-por-dentro@grade",
+    "quando": "2026-10-05T16:41:22.562Z",
+    "pasta": "midia/01-grade-inicial/P3-carrossel-negociacao-por-dentro",
+    "aprovado": true
+  },
+  {
+    "id": "P7-carrossel-7-erros@grade-retry",
+    "quando": "2026-10-05T16:42:08.724Z",
+    "pasta": "midia/01-grade-inicial/P7-carrossel-7-erros",
+    "aprovado": true
+  },
+  {
+    "id": "P2-carrossel-como-funciona@grade",
+    "quando": "2026-10-05T16:44:22.562Z",
+    "pasta": "midia/01-grade-inicial/P2-carrossel-como-funciona",
+    "aprovado": true
+  },
+  {
+    "id": "P1-reel-lead-esquecido@grade",
+    "quando": "2026-10-05T16:47:22.562Z",
+    "pasta": "midia/01-grade-inicial/P1-reel-lead-esquecido",
+    "aprovado": true
+  }
+]

@@ -1,0 +1,10 @@
+2026-10-05T16:18:49.536Z OK P9-carrossel-pra-quem-e@grade https://www.instagram.com/p/DeHnw8Um99_/
+2026-10-05T16:27:25.060Z OK P8-carrossel-faz-a-conta@grade https://www.instagram.com/p/DeHou_tGy9i/
+2026-10-05T16:31:07.662Z ERRO P7-carrossel-7-erros@grade fetch failed
+2026-10-05T16:33:34.925Z OK P6-carrossel-antes-depois@grade https://www.instagram.com/p/DeHpcmhkQNf/
+2026-10-05T16:36:25.780Z OK P5-reel-tudo-que-vem@grade https://www.instagram.com/reel/DeHpt4FglzN/
+2026-10-05T16:39:32.078Z OK P4-carrossel-5-follow-ups@grade https://www.instagram.com/p/DeHqIHpm5-Q/
+2026-10-05T16:42:24.311Z OK P3-carrossel-negociacao-por-dentro@grade https://www.instagram.com/p/DeHqdmCGyYo/
+2026-10-05T16:44:03.677Z OK P7-carrossel-7-erros@grade-retry https://www.instagram.com/p/DeHqpikG0BB/
+2026-10-05T16:45:57.080Z OK P2-carrossel-como-funciona@grade https://www.instagram.com/p/DeHq26wHMfV/
+2026-10-05T16:48:16.455Z OK P1-reel-lead-esquecido@grade https://www.instagram.com/reel/DeHrEW1jYQZ/
