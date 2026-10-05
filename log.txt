@@ -20,3 +20,9 @@
 2026-10-05T18:45:15.916Z OK story:2-por-dentro/04-followup.mp4@destaques 
 2026-10-05T18:45:48.845Z OK story:2-por-dentro/05-reunioes.mp4@destaques 
 2026-10-05T18:46:22.012Z OK story:2-por-dentro/06-jordaoia.mp4@destaques 
+2026-10-05T19:31:52.832Z OK story:3-jordao/01-capa.jpg@destaques 
+2026-10-05T19:32:04.403Z OK story:3-jordao/02-numeros.jpg@destaques 
+2026-10-05T19:32:18.343Z OK story:3-jordao/03-lives.jpg@destaques 
+2026-10-05T19:32:31.235Z OK story:3-jordao/04-metodo.jpg@destaques 
+2026-10-05T19:32:44.163Z OK story:4-planos/01-capa.jpg@destaques 
+2026-10-05T19:32:56.825Z OK story:4-planos/02-precos.jpg@destaques 

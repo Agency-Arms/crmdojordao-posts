@@ -141,5 +141,47 @@
     "tentativas": 1,
     "mediaId": "17885733177496453",
     "link": ""
+  },
+  "story:3-jordao/01-capa.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:31:52.832Z",
+    "tentativas": 1,
+    "mediaId": "17938948383373997",
+    "link": ""
+  },
+  "story:3-jordao/02-numeros.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:32:04.403Z",
+    "tentativas": 1,
+    "mediaId": "18120830306609931",
+    "link": ""
+  },
+  "story:3-jordao/03-lives.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:32:18.343Z",
+    "tentativas": 1,
+    "mediaId": "18093555809161743",
+    "link": ""
+  },
+  "story:3-jordao/04-metodo.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:32:31.235Z",
+    "tentativas": 1,
+    "mediaId": "18485029807129383",
+    "link": ""
+  },
+  "story:4-planos/01-capa.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:32:44.163Z",
+    "tentativas": 1,
+    "mediaId": "17967031203188141",
+    "link": ""
+  },
+  "story:4-planos/02-precos.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T19:32:56.825Z",
+    "tentativas": 1,
+    "mediaId": "17862890466693287",
+    "link": ""
   }
 }
