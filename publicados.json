@@ -99,5 +99,47 @@
     "tentativas": 1,
     "mediaId": "17888994975468909",
     "link": ""
+  },
+  "story:2-por-dentro/01-funil.mp4@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:42:51.564Z",
+    "tentativas": 1,
+    "mediaId": "17968072743170004",
+    "link": ""
+  },
+  "story:2-por-dentro/02-negocio.mp4@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:43:25.499Z",
+    "tentativas": 1,
+    "mediaId": "18638700019049509",
+    "link": ""
+  },
+  "story:2-por-dentro/03-inbox.mp4@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:44:00.567Z",
+    "tentativas": 1,
+    "mediaId": "17865128583679499",
+    "link": ""
+  },
+  "story:2-por-dentro/04-followup.mp4@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:45:15.916Z",
+    "tentativas": 1,
+    "mediaId": "18056245781573417",
+    "link": ""
+  },
+  "story:2-por-dentro/05-reunioes.mp4@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:45:48.845Z",
+    "tentativas": 1,
+    "mediaId": "18103815248196672",
+    "link": ""
+  },
+  "story:2-por-dentro/06-jordaoia.mp4@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:46:22.012Z",
+    "tentativas": 1,
+    "mediaId": "17885733177496453",
+    "link": ""
   }
 }

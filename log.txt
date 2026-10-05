@@ -14,3 +14,9 @@
 2026-10-05T18:32:17.072Z OK story:1-comece-aqui/04-follow-up.jpg@destaques 
 2026-10-05T18:32:26.411Z OK story:1-comece-aqui/05-reunioes.jpg@destaques 
 2026-10-05T18:32:35.615Z OK story:1-comece-aqui/06-audio.jpg@destaques 
+2026-10-05T18:42:51.564Z OK story:2-por-dentro/01-funil.mp4@destaques 
+2026-10-05T18:43:25.499Z OK story:2-por-dentro/02-negocio.mp4@destaques 
+2026-10-05T18:44:00.567Z OK story:2-por-dentro/03-inbox.mp4@destaques 
+2026-10-05T18:45:15.916Z OK story:2-por-dentro/04-followup.mp4@destaques 
+2026-10-05T18:45:48.845Z OK story:2-por-dentro/05-reunioes.mp4@destaques 
+2026-10-05T18:46:22.012Z OK story:2-por-dentro/06-jordaoia.mp4@destaques 
