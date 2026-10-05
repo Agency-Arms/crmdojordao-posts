@@ -58,5 +58,209 @@
     "quando": "2026-10-05T16:47:22.562Z",
     "pasta": "midia/01-grade-inicial/P1-reel-lead-esquecido",
     "aprovado": true
+  },
+  {
+    "id": "story:1-comece-aqui/01-capa.jpg@destaques",
+    "quando": "2026-10-05T18:30:00.000Z",
+    "arquivo": "midia/02-destaques/1-comece-aqui/01-capa.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:1-comece-aqui/02-rotina.jpg@destaques",
+    "quando": "2026-10-05T18:30:00.000Z",
+    "arquivo": "midia/02-destaques/1-comece-aqui/02-rotina.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:1-comece-aqui/03-whatsapp.jpg@destaques",
+    "quando": "2026-10-05T18:30:00.000Z",
+    "arquivo": "midia/02-destaques/1-comece-aqui/03-whatsapp.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:1-comece-aqui/04-follow-up.jpg@destaques",
+    "quando": "2026-10-05T18:30:00.000Z",
+    "arquivo": "midia/02-destaques/1-comece-aqui/04-follow-up.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:1-comece-aqui/05-reunioes.jpg@destaques",
+    "quando": "2026-10-05T18:30:00.000Z",
+    "arquivo": "midia/02-destaques/1-comece-aqui/05-reunioes.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:1-comece-aqui/06-audio.jpg@destaques",
+    "quando": "2026-10-05T18:30:00.000Z",
+    "arquivo": "midia/02-destaques/1-comece-aqui/06-audio.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:2-por-dentro/01-funil.mp4@destaques",
+    "quando": "2026-10-05T18:40:00.000Z",
+    "arquivo": "midia/02-destaques/2-por-dentro/01-funil.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:2-por-dentro/02-negocio.mp4@destaques",
+    "quando": "2026-10-05T18:40:00.000Z",
+    "arquivo": "midia/02-destaques/2-por-dentro/02-negocio.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:2-por-dentro/03-inbox.mp4@destaques",
+    "quando": "2026-10-05T18:40:00.000Z",
+    "arquivo": "midia/02-destaques/2-por-dentro/03-inbox.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:2-por-dentro/04-followup.mp4@destaques",
+    "quando": "2026-10-05T18:40:00.000Z",
+    "arquivo": "midia/02-destaques/2-por-dentro/04-followup.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:2-por-dentro/05-reunioes.mp4@destaques",
+    "quando": "2026-10-05T18:40:00.000Z",
+    "arquivo": "midia/02-destaques/2-por-dentro/05-reunioes.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:2-por-dentro/06-jordaoia.mp4@destaques",
+    "quando": "2026-10-05T18:40:00.000Z",
+    "arquivo": "midia/02-destaques/2-por-dentro/06-jordaoia.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:3-jordao/01-capa.jpg@destaques",
+    "quando": "2026-10-05T18:50:00.000Z",
+    "arquivo": "midia/02-destaques/3-jordao/01-capa.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:3-jordao/02-numeros.jpg@destaques",
+    "quando": "2026-10-05T18:50:00.000Z",
+    "arquivo": "midia/02-destaques/3-jordao/02-numeros.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:3-jordao/03-lives.jpg@destaques",
+    "quando": "2026-10-05T18:50:00.000Z",
+    "arquivo": "midia/02-destaques/3-jordao/03-lives.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:3-jordao/04-metodo.jpg@destaques",
+    "quando": "2026-10-05T18:50:00.000Z",
+    "arquivo": "midia/02-destaques/3-jordao/04-metodo.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:4-planos/01-capa.jpg@destaques",
+    "quando": "2026-10-05T18:50:00.000Z",
+    "arquivo": "midia/02-destaques/4-planos/01-capa.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:4-planos/02-precos.jpg@destaques",
+    "quando": "2026-10-05T18:50:00.000Z",
+    "arquivo": "midia/02-destaques/4-planos/02-precos.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:4-planos/03-o-que-vem.jpg@destaques",
+    "quando": "2026-10-05T19:00:00.000Z",
+    "arquivo": "midia/02-destaques/4-planos/03-o-que-vem.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:4-planos/04-anual.jpg@destaques",
+    "quando": "2026-10-05T19:00:00.000Z",
+    "arquivo": "midia/02-destaques/4-planos/04-anual.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:4-planos/05-time.jpg@destaques",
+    "quando": "2026-10-05T19:00:00.000Z",
+    "arquivo": "midia/02-destaques/4-planos/05-time.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:5-duvidas/01-faq-1.jpg@destaques",
+    "quando": "2026-10-05T19:00:00.000Z",
+    "arquivo": "midia/02-destaques/5-duvidas/01-faq-1.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:5-duvidas/02-faq-2.jpg@destaques",
+    "quando": "2026-10-05T19:00:00.000Z",
+    "arquivo": "midia/02-destaques/5-duvidas/02-faq-2.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:5-duvidas/03-faq-3.jpg@destaques",
+    "quando": "2026-10-05T19:00:00.000Z",
+    "arquivo": "midia/02-destaques/5-duvidas/03-faq-3.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:5-duvidas/04-faq-4.jpg@destaques",
+    "quando": "2026-10-05T19:10:00.000Z",
+    "arquivo": "midia/02-destaques/5-duvidas/04-faq-4.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:5-duvidas/05-faq-5.jpg@destaques",
+    "quando": "2026-10-05T19:10:00.000Z",
+    "arquivo": "midia/02-destaques/5-duvidas/05-faq-5.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:5-duvidas/06-faq-6.jpg@destaques",
+    "quando": "2026-10-05T19:10:00.000Z",
+    "arquivo": "midia/02-destaques/5-duvidas/06-faq-6.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:6-materiais/01-capa.jpg@destaques",
+    "quando": "2026-10-05T19:10:00.000Z",
+    "arquivo": "midia/02-destaques/6-materiais/01-capa.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:6-materiais/02-capas.jpg@destaques",
+    "quando": "2026-10-05T19:10:00.000Z",
+    "arquivo": "midia/02-destaques/6-materiais/02-capas.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:7-clientes/01-capa.jpg@destaques",
+    "quando": "2026-10-05T19:10:00.000Z",
+    "arquivo": "midia/02-destaques/7-clientes/01-capa.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:7-clientes/02-arnaldo.mp4@destaques",
+    "quando": "2026-10-05T19:20:00.000Z",
+    "arquivo": "midia/02-destaques/7-clientes/02-arnaldo.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:7-clientes/03-danilo.mp4@destaques",
+    "quando": "2026-10-05T19:20:00.000Z",
+    "arquivo": "midia/02-destaques/7-clientes/03-danilo.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:7-clientes/04-marcos-ia.mp4@destaques",
+    "quando": "2026-10-05T19:20:00.000Z",
+    "arquivo": "midia/02-destaques/7-clientes/04-marcos-ia.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:7-clientes/05-marcos-jordao.mp4@destaques",
+    "quando": "2026-10-05T19:20:00.000Z",
+    "arquivo": "midia/02-destaques/7-clientes/05-marcos-jordao.mp4",
+    "aprovado": true
   }
 ]

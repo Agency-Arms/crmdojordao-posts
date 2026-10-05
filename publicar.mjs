@@ -18,7 +18,8 @@ const FEITOS = join(RAIZ, "publicados.json");
 const LOG = join(RAIZ, "log.txt");
 const API = "https://graph.facebook.com/v25.0";
 const JANELA_MIN = 45; // item vencido há mais de 45 min não sai sozinho · cron parado não vira rajada
-const MAX_POR_RODADA = 2;
+const MAX_POR_RODADA = 2; // posts de feed
+const MAX_STORIES_RODADA = 6; // story não aparece no feed, sai em sequência (ex.: montar um destaque)
 
 const arquivoLocal = "C:/Users/Mathe/.claude/secrets/ig-crm-jordao.env";
 const local = existsSync(arquivoLocal) ? Object.fromEntries(readFileSync(arquivoLocal, "utf8").split(/\r?\n/).filter((l) => /^\w+=/.test(l)).map((l) => [l.slice(0, l.indexOf("=")), l.slice(l.indexOf("=") + 1).trim()])) : {};
@@ -148,14 +149,14 @@ if (cmd === "run") {
   const temStory = vencidos.some((x) => x.arquivo);
   const stories = temStory ? await storiesNoAr() : [];
   const idsNossos = new Set(Object.values(feitos).map((v) => v.mediaId).filter(Boolean));
-  let feitosNestaRodada = 0;
+  let feitosNestaRodada = 0, storiesNestaRodada = 0;
   for (const item of vencidos) {
-    if (feitosNestaRodada >= MAX_POR_RODADA) break;
     const m = midia(item);
+    if (m.tipo === "story" ? storiesNestaRodada >= MAX_STORIES_RODADA : feitosNestaRodada >= MAX_POR_RODADA) continue;
     if (m.tipo !== "story") {
       const igual = legendasNoAr.get(norm(m.legenda));
       if (igual) { feitos[item.id] = { status: "ok", em: new Date().toISOString(), mediaId: igual.id, link: igual.permalink, nota: "já estava no ar · não repostado" }; log(`JA-NO-AR ${item.id} ${igual.permalink}`); writeFileSync(FEITOS, JSON.stringify(feitos, null, 2)); continue; }
-      if (Date.now() - ultimoFeed < 2 * 60000) { console.log("intervalo mínimo entre posts · fica pra próxima rodada"); break; }
+      if (Date.now() - ultimoFeed < 2 * 60000) { console.log("intervalo mínimo entre posts · fica pra próxima rodada"); continue; }
     } else {
       const solto = stories.find((st) => !idsNossos.has(st.id) && Date.parse(st.timestamp) >= Date.parse(item.quando) - 60000);
       if (solto) { feitos[item.id] = { status: "conferir", em: new Date().toISOString(), mediaId: solto.id, nota: "tem story no ar sem registro depois do horário deste item · não repostado, conferir no perfil" }; log(`CONFERIR ${item.id} story ${solto.id} no ar sem registro`); writeFileSync(FEITOS, JSON.stringify(feitos, null, 2)); continue; }
@@ -169,7 +170,7 @@ if (cmd === "run") {
       if (m.tipo !== "story") { legendasNoAr.set(norm(m.legenda), { id: r.mediaId, permalink: r.link }); ultimoFeed = Date.now(); }
       okPorPasta.add(chave(item));
       idsNossos.add(r.mediaId);
-      feitosNestaRodada++;
+      if (m.tipo === "story") storiesNestaRodada++; else feitosNestaRodada++;
       log(`OK ${item.id} ${r.link || ""}`);
     } catch (e) {
       feitos[item.id] = { status: "erro", em: new Date().toISOString(), tentativas: n, erro: String(e.message || e) };
