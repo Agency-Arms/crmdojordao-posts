@@ -39,6 +39,8 @@ async function g(path, params = {}, method = "GET") {
 
 // item: { id, quando: ISO, pasta: "midia/...", aprovado: true }
 function midia(item) {
+  // story: item.arquivo aponta um .jpg ou .mp4 · sai como STORIES (a API não põe figurinha de link)
+  if (item.arquivo) { const u = encodeURI(`${BASE}/${item.arquivo}`); return item.arquivo.endsWith(".mp4") ? { tipo: "story", video: u, legenda: "" } : { tipo: "story", fotos: [u], legenda: "" }; }
   const p = join(RAIZ, item.pasta);
   const f = readdirSync(p);
   const url = (n) => encodeURI(`${BASE}/${item.pasta}/${n}`);
@@ -63,7 +65,9 @@ async function publicarIG(item) {
   const m = midia(item);
   if (m.legenda.length > 2200) throw new Error("legenda passa de 2.200 caracteres");
   let criacao;
-  if (m.tipo === "reel") {
+  if (m.tipo === "story") {
+    criacao = (await g(`/${IG}/media`, { media_type: "STORIES", ...(m.video ? { video_url: m.video } : { image_url: m.fotos[0] }) }, "POST")).id;
+  } else if (m.tipo === "reel") {
     criacao = (await g(`/${IG}/media`, { media_type: "REELS", video_url: m.video, caption: m.legenda, share_to_feed: "true", ...(m.capa ? { cover_url: m.capa } : {}) }, "POST")).id;
   } else if (m.tipo === "carrossel") {
     if (m.fotos.length > 10) throw new Error("carrossel com mais de 10 imagens");
@@ -76,7 +80,7 @@ async function publicarIG(item) {
   }
   await esperarPronto(criacao);
   const pub = await g(`/${IG}/media_publish`, { creation_id: criacao }, "POST");
-  const link = (await g(`/${pub.id}`, { fields: "permalink" })).permalink;
+  const link = m.tipo === "story" ? "" : (await g(`/${pub.id}`, { fields: "permalink" })).permalink;
   return { mediaId: pub.id, link };
 }
 
@@ -95,14 +99,34 @@ if (cmd === "check") {
   process.exit(0);
 }
 
+// ── trava anti-repetição ─────────────────────────────────────────────
+// 1) A FONTE DA VERDADE É O INSTAGRAM: antes de publicar, lê os últimos posts do perfil e compara a legenda.
+//    Se já existe, marca como publicado e NÃO posta de novo (cobre registro perdido, push que falhou, bug no meio).
+// 2) A mesma pasta nunca sai duas vezes, mesmo com outro id na fila.
+// 3) Um item com erro só é tentado de novo depois da checagem 1, e no máximo 3 vezes.
+// 4) Story parado em "publicando" (caiu no meio) nunca é repetido sozinho: fica pra decisão humana.
+// 5) Intervalo mínimo de 2 min entre posts de feed, lido do próprio Instagram.
+const norm = (t) => (t || "").normalize("NFC").replace(/s+/g, " ").trim().slice(0, 180);
+const chave = (x) => x.arquivo || x.pasta;
+const okPorPasta = new Set(Object.entries(feitos).filter(([, v]) => v.status === "ok").map(([k]) => chave(fila.find((x) => x.id === k) || {})).filter(Boolean));
+const tentativas = (x) => feitos[x.id]?.tentativas || 0;
+const elegivel = (x) => x.aprovado && !okPorPasta.has(chave(x)) && (!feitos[x.id] || (feitos[x.id].status === "erro" && tentativas(x) < 3) || (feitos[x.id].status === "publicando" && !x.arquivo));
 const agora = Date.now();
-const vencidos = pend.filter((x) => Date.parse(x.quando) <= agora && agora - Date.parse(x.quando) <= JANELA_MIN * 60000);
-const perdidos = pend.filter((x) => agora - Date.parse(x.quando) > JANELA_MIN * 60000);
-const proximos = pend.filter((x) => Date.parse(x.quando) > agora).slice(0, 5);
+const abertos = fila.filter(elegivel);
+const vencidos = abertos.filter((x) => Date.parse(x.quando) <= agora && agora - Date.parse(x.quando) <= JANELA_MIN * 60000);
+const perdidos = abertos.filter((x) => agora - Date.parse(x.quando) > JANELA_MIN * 60000);
+const proximos = abertos.filter((x) => Date.parse(x.quando) > agora).slice(0, 5);
+const travados = fila.filter((x) => feitos[x.id]?.status === "publicando" && x.arquivo);
+
+async function noPerfil() {
+  const r = await g(`/${env("IG_USER_ID")}/media`, { fields: "id,caption,permalink,timestamp", limit: "100" });
+  return r.data || [];
+}
 
 if (cmd === "dry") {
   console.log("Sairia agora:", vencidos.map((x) => x.id).join(" | ") || "nada");
   console.log("Passou da janela (não sai sozinho, decidir):", perdidos.map((x) => x.id).join(" | ") || "nada");
+  console.log("Story travado no meio (conferir no perfil):", travados.map((x) => x.id).join(" | ") || "nada");
   console.log("Próximos:", proximos.map((x) => `${x.id} @ ${new Date(x.quando).toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" })}`).join(" | ") || "nada");
   process.exit(0);
 }
@@ -110,20 +134,35 @@ if (cmd === "dry") {
 if (cmd === "run") {
   if (existsSync(join(RAIZ, "PAUSAR"))) { log("PAUSADO · arquivo PAUSAR existe"); process.exit(0); }
   if (!env("PAGE_TOKEN") || !env("IG_USER_ID")) { log("faltam credenciais"); process.exit(1); }
-  for (const item of vencidos.slice(0, MAX_POR_RODADA)) {
+  if (!vencidos.length) { console.log("nada vencido"); process.exit(0); }
+  const perfil = await noPerfil();
+  const legendasNoAr = new Map(perfil.map((p) => [norm(p.caption), p]));
+  let ultimoFeed = perfil.length ? Date.parse(perfil[0].timestamp) : 0;
+  let feitosNestaRodada = 0;
+  for (const item of vencidos) {
+    if (feitosNestaRodada >= MAX_POR_RODADA) break;
+    const m = midia(item);
+    if (m.tipo !== "story") {
+      const igual = legendasNoAr.get(norm(m.legenda));
+      if (igual) { feitos[item.id] = { status: "ok", em: new Date().toISOString(), mediaId: igual.id, link: igual.permalink, nota: "já estava no ar · não repostado" }; log(`JA-NO-AR ${item.id} ${igual.permalink}`); writeFileSync(FEITOS, JSON.stringify(feitos, null, 2)); continue; }
+      if (Date.now() - ultimoFeed < 2 * 60000) { console.log("intervalo mínimo entre posts · fica pra próxima rodada"); break; }
+    }
+    const n = tentativas(item) + 1;
     try {
-      feitos[item.id] = { status: "publicando", em: new Date().toISOString() };
-      writeFileSync(FEITOS, JSON.stringify(feitos, null, 2)); // marca antes: se cair no meio, não repete sozinho
+      feitos[item.id] = { status: "publicando", em: new Date().toISOString(), tentativas: n };
+      writeFileSync(FEITOS, JSON.stringify(feitos, null, 2)); // marca antes: se cair no meio, a checagem do perfil decide
       const r = await publicarIG(item);
-      feitos[item.id] = { status: "ok", em: new Date().toISOString(), ...r };
-      log(`OK ${item.id} ${r.link}`);
+      feitos[item.id] = { status: "ok", em: new Date().toISOString(), tentativas: n, ...r };
+      if (m.tipo !== "story") { legendasNoAr.set(norm(m.legenda), { id: r.mediaId, permalink: r.link }); ultimoFeed = Date.now(); }
+      okPorPasta.add(chave(item));
+      feitosNestaRodada++;
+      log(`OK ${item.id} ${r.link || ""}`);
     } catch (e) {
-      feitos[item.id] = { status: "erro", em: new Date().toISOString(), erro: String(e.message || e) };
-      log(`ERRO ${item.id} ${e.message || e}`);
+      feitos[item.id] = { status: "erro", em: new Date().toISOString(), tentativas: n, erro: String(e.message || e) };
+      log(`ERRO ${item.id} (tentativa ${n}/3) ${e.message || e}`);
     }
     writeFileSync(FEITOS, JSON.stringify(feitos, null, 2));
   }
-  if (!vencidos.length) console.log("nada vencido");
   process.exit(0);
 }
 
