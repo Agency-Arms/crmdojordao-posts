@@ -8,3 +8,9 @@
 2026-10-05T16:44:03.677Z OK P7-carrossel-7-erros@grade-retry https://www.instagram.com/p/DeHqpikG0BB/
 2026-10-05T16:45:57.080Z OK P2-carrossel-como-funciona@grade https://www.instagram.com/p/DeHq26wHMfV/
 2026-10-05T16:48:16.455Z OK P1-reel-lead-esquecido@grade https://www.instagram.com/reel/DeHrEW1jYQZ/
+2026-10-05T18:31:46.114Z OK story:1-comece-aqui/01-capa.jpg@destaques 
+2026-10-05T18:32:01.745Z OK story:1-comece-aqui/02-rotina.jpg@destaques 
+2026-10-05T18:32:09.358Z OK story:1-comece-aqui/03-whatsapp.jpg@destaques 
+2026-10-05T18:32:17.072Z OK story:1-comece-aqui/04-follow-up.jpg@destaques 
+2026-10-05T18:32:26.411Z OK story:1-comece-aqui/05-reunioes.jpg@destaques 
+2026-10-05T18:32:35.615Z OK story:1-comece-aqui/06-audio.jpg@destaques 

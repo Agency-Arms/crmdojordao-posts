@@ -57,5 +57,47 @@
     "em": "2026-10-05T16:48:16.455Z",
     "mediaId": "18186614860414555",
     "link": "https://www.instagram.com/reel/DeHrEW1jYQZ/"
+  },
+  "story:1-comece-aqui/01-capa.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:31:46.114Z",
+    "tentativas": 1,
+    "mediaId": "17977751193135828",
+    "link": ""
+  },
+  "story:1-comece-aqui/02-rotina.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:32:01.745Z",
+    "tentativas": 1,
+    "mediaId": "18127643431844448",
+    "link": ""
+  },
+  "story:1-comece-aqui/03-whatsapp.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:32:09.358Z",
+    "tentativas": 1,
+    "mediaId": "18445580818135733",
+    "link": ""
+  },
+  "story:1-comece-aqui/04-follow-up.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:32:17.072Z",
+    "tentativas": 1,
+    "mediaId": "18142825933608105",
+    "link": ""
+  },
+  "story:1-comece-aqui/05-reunioes.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:32:26.411Z",
+    "tentativas": 1,
+    "mediaId": "18125103184893649",
+    "link": ""
+  },
+  "story:1-comece-aqui/06-audio.jpg@destaques": {
+    "status": "ok",
+    "em": "2026-10-05T18:32:35.615Z",
+    "tentativas": 1,
+    "mediaId": "17888994975468909",
+    "link": ""
   }
 }
