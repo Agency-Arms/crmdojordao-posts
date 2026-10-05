@@ -23,11 +23,13 @@ jobs:
           PAGE_TOKEN: ${{ secrets.PAGE_TOKEN }}
         run: node publicar.mjs run
       - name: Registrar o que saiu
+        if: always()
         run: |
           if [ -n "$(git status --porcelain publicados.json log.txt)" ]; then
             git config user.name "publicador-crmdojordao"
             git config user.email "matheus@emploia.com.br"
             git add publicados.json log.txt
             git commit -m "publicados: $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+            echo "nao consegui gravar o registro" && exit 1
           fi

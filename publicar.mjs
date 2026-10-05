@@ -106,7 +106,9 @@ if (cmd === "check") {
 // 3) Um item com erro só é tentado de novo depois da checagem 1, e no máximo 3 vezes.
 // 4) Story parado em "publicando" (caiu no meio) nunca é repetido sozinho: fica pra decisão humana.
 // 5) Intervalo mínimo de 2 min entre posts de feed, lido do próprio Instagram.
-const norm = (t) => (t || "").normalize("NFC").replace(/s+/g, " ").trim().slice(0, 180);
+// 6) Story não tem legenda: antes de publicar, lê os stories no ar. Se existe um story que a gente não registrou,
+//    publicado depois do horário deste item, assume que é ele (registro perdido) e NÃO repete: fica pra conferir.
+const norm = (t) => (t || "").normalize("NFC").replace(/\s+/g, " ").trim().slice(0, 180);
 const chave = (x) => x.arquivo || x.pasta;
 const okPorPasta = new Set(Object.entries(feitos).filter(([, v]) => v.status === "ok").map(([k]) => chave(fila.find((x) => x.id === k) || {})).filter(Boolean));
 const tentativas = (x) => feitos[x.id]?.tentativas || 0;
@@ -116,7 +118,12 @@ const abertos = fila.filter(elegivel);
 const vencidos = abertos.filter((x) => Date.parse(x.quando) <= agora && agora - Date.parse(x.quando) <= JANELA_MIN * 60000);
 const perdidos = abertos.filter((x) => agora - Date.parse(x.quando) > JANELA_MIN * 60000);
 const proximos = abertos.filter((x) => Date.parse(x.quando) > agora).slice(0, 5);
-const travados = fila.filter((x) => feitos[x.id]?.status === "publicando" && x.arquivo);
+const travados = fila.filter((x) => (feitos[x.id]?.status === "publicando" && x.arquivo) || feitos[x.id]?.status === "conferir");
+
+async function storiesNoAr() {
+  const r = await g(`/${env("IG_USER_ID")}/stories`, { fields: "id,timestamp", limit: "100" });
+  return r.data || [];
+}
 
 async function noPerfil() {
   const r = await g(`/${env("IG_USER_ID")}/media`, { fields: "id,caption,permalink,timestamp", limit: "100" });
@@ -126,7 +133,7 @@ async function noPerfil() {
 if (cmd === "dry") {
   console.log("Sairia agora:", vencidos.map((x) => x.id).join(" | ") || "nada");
   console.log("Passou da janela (não sai sozinho, decidir):", perdidos.map((x) => x.id).join(" | ") || "nada");
-  console.log("Story travado no meio (conferir no perfil):", travados.map((x) => x.id).join(" | ") || "nada");
+  console.log("Story pra conferir no perfil (não sai sozinho):", travados.map((x) => x.id).join(" | ") || "nada");
   console.log("Próximos:", proximos.map((x) => `${x.id} @ ${new Date(x.quando).toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" })}`).join(" | ") || "nada");
   process.exit(0);
 }
@@ -138,6 +145,9 @@ if (cmd === "run") {
   const perfil = await noPerfil();
   const legendasNoAr = new Map(perfil.map((p) => [norm(p.caption), p]));
   let ultimoFeed = perfil.length ? Date.parse(perfil[0].timestamp) : 0;
+  const temStory = vencidos.some((x) => x.arquivo);
+  const stories = temStory ? await storiesNoAr() : [];
+  const idsNossos = new Set(Object.values(feitos).map((v) => v.mediaId).filter(Boolean));
   let feitosNestaRodada = 0;
   for (const item of vencidos) {
     if (feitosNestaRodada >= MAX_POR_RODADA) break;
@@ -146,6 +156,9 @@ if (cmd === "run") {
       const igual = legendasNoAr.get(norm(m.legenda));
       if (igual) { feitos[item.id] = { status: "ok", em: new Date().toISOString(), mediaId: igual.id, link: igual.permalink, nota: "já estava no ar · não repostado" }; log(`JA-NO-AR ${item.id} ${igual.permalink}`); writeFileSync(FEITOS, JSON.stringify(feitos, null, 2)); continue; }
       if (Date.now() - ultimoFeed < 2 * 60000) { console.log("intervalo mínimo entre posts · fica pra próxima rodada"); break; }
+    } else {
+      const solto = stories.find((st) => !idsNossos.has(st.id) && Date.parse(st.timestamp) >= Date.parse(item.quando) - 60000);
+      if (solto) { feitos[item.id] = { status: "conferir", em: new Date().toISOString(), mediaId: solto.id, nota: "tem story no ar sem registro depois do horário deste item · não repostado, conferir no perfil" }; log(`CONFERIR ${item.id} story ${solto.id} no ar sem registro`); writeFileSync(FEITOS, JSON.stringify(feitos, null, 2)); continue; }
     }
     const n = tentativas(item) + 1;
     try {
@@ -155,6 +168,7 @@ if (cmd === "run") {
       feitos[item.id] = { status: "ok", em: new Date().toISOString(), tentativas: n, ...r };
       if (m.tipo !== "story") { legendasNoAr.set(norm(m.legenda), { id: r.mediaId, permalink: r.link }); ultimoFeed = Date.now(); }
       okPorPasta.add(chave(item));
+      idsNossos.add(r.mediaId);
       feitosNestaRodada++;
       log(`OK ${item.id} ${r.link || ""}`);
     } catch (e) {
