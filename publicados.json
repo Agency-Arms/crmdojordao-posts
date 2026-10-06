@@ -304,9 +304,10 @@
     "nota": "já estava no ar · não repostado"
   },
   "D1-07h00-meio-frases-que-cansaram@lote1": {
-    "status": "erro",
-    "em": "2026-10-06T20:19:47.634Z",
-    "tentativas": 1,
-    "erro": "/17841424760671838/media_publish: Application request limit reached (code 4)"
+    "status": "ok",
+    "em": "2026-10-06T20:20:06.731Z",
+    "mediaId": "18086480672296961",
+    "link": "https://www.instagram.com/p/DeKoHucjMQG/",
+    "nota": "já estava no ar · não repostado"
   }
 }
