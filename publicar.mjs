@@ -118,7 +118,7 @@ if (cmd === "check") {
 // 6) Story não tem legenda: antes de publicar, lê os stories no ar. Se existe um story que a gente não registrou,
 //    publicado depois do horário deste item, assume que é ele (registro perdido) e NÃO repete: fica pra conferir.
 const norm = (t) => (t || "").normalize("NFC").replace(/\s+/g, " ").trim().slice(0, 180);
-const chave = (x) => x.arquivo || x.pasta;
+const chave = (x) => (x.arquivo ? x.arquivo + (x.rodada ? "#" + x.rodada : "") : x.pasta); // rodada: republicação aprovada do mesmo arquivo
 const okPorPasta = new Set(Object.entries(feitos).filter(([, v]) => v.status === "ok").map(([k]) => chave(fila.find((x) => x.id === k) || {})).filter(Boolean));
 const tentativas = (x) => feitos[x.id]?.tentativas || 0;
 const elegivel = (x) => x.aprovado && !okPorPasta.has(chave(x)) && (!feitos[x.id] || (feitos[x.id].status === "erro" && tentativas(x) < 3) || (feitos[x.id].status === "publicando" && !x.arquivo));

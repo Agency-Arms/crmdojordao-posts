@@ -442,5 +442,138 @@
     "quando": "2026-10-16T12:00:00.000Z",
     "pasta": "midia/04-lote-1/D3-22h00-fundo-destino-negocio-parado",
     "aprovado": true
+  },
+  {
+    "id": "story:2-por-dentro/05-reunioes.mp4@arquivo",
+    "quando": "2026-10-08T13:00:00.000Z",
+    "arquivo": "midia/02-destaques/2-por-dentro/05-reunioes.mp4",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:2-por-dentro/06-jordaoia.mp4@arquivo",
+    "quando": "2026-10-08T14:00:00.000Z",
+    "arquivo": "midia/02-destaques/2-por-dentro/06-jordaoia.mp4",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:3-jordao/01-capa.jpg@arquivo",
+    "quando": "2026-10-08T17:00:00.000Z",
+    "arquivo": "midia/02-destaques/3-jordao/01-capa.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:3-jordao/03-lives.jpg@arquivo",
+    "quando": "2026-10-08T18:00:00.000Z",
+    "arquivo": "midia/02-destaques/3-jordao/03-lives.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:3-jordao/04-metodo.jpg@arquivo",
+    "quando": "2026-10-08T20:00:00.000Z",
+    "arquivo": "midia/02-destaques/3-jordao/04-metodo.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:4-planos/01-capa.jpg@arquivo",
+    "quando": "2026-10-08T23:00:00.000Z",
+    "arquivo": "midia/02-destaques/4-planos/01-capa.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:4-planos/02-precos.jpg@arquivo",
+    "quando": "2026-10-09T13:00:00.000Z",
+    "arquivo": "midia/02-destaques/4-planos/02-precos.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:4-planos/03-o-que-vem.jpg@arquivo",
+    "quando": "2026-10-09T14:00:00.000Z",
+    "arquivo": "midia/02-destaques/4-planos/03-o-que-vem.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:5-duvidas/01-faq-1.jpg@arquivo",
+    "quando": "2026-10-09T17:00:00.000Z",
+    "arquivo": "midia/02-destaques/5-duvidas/01-faq-1.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:5-duvidas/02-faq-2.jpg@arquivo",
+    "quando": "2026-10-09T18:00:00.000Z",
+    "arquivo": "midia/02-destaques/5-duvidas/02-faq-2.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:5-duvidas/05-faq-5.jpg@arquivo",
+    "quando": "2026-10-09T20:00:00.000Z",
+    "arquivo": "midia/02-destaques/5-duvidas/05-faq-5.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:5-duvidas/06-faq-6.jpg@arquivo",
+    "quando": "2026-10-09T23:00:00.000Z",
+    "arquivo": "midia/02-destaques/5-duvidas/06-faq-6.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:6-materiais/01-capa.jpg@arquivo",
+    "quando": "2026-10-10T13:00:00.000Z",
+    "arquivo": "midia/02-destaques/6-materiais/01-capa.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:6-materiais/02-capas.jpg@arquivo",
+    "quando": "2026-10-10T14:00:00.000Z",
+    "arquivo": "midia/02-destaques/6-materiais/02-capas.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:7-clientes/01-capa.jpg@arquivo",
+    "quando": "2026-10-10T17:00:00.000Z",
+    "arquivo": "midia/02-destaques/7-clientes/01-capa.jpg",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:7-clientes/02-arnaldo.mp4@arquivo",
+    "quando": "2026-10-10T18:00:00.000Z",
+    "arquivo": "midia/02-destaques/7-clientes/02-arnaldo.mp4",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:7-clientes/03-danilo.mp4@arquivo",
+    "quando": "2026-10-10T20:00:00.000Z",
+    "arquivo": "midia/02-destaques/7-clientes/03-danilo.mp4",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:7-clientes/04-marcos-ia.mp4@arquivo",
+    "quando": "2026-10-10T23:00:00.000Z",
+    "arquivo": "midia/02-destaques/7-clientes/04-marcos-ia.mp4",
+    "rodada": "arquivo",
+    "aprovado": true
+  },
+  {
+    "id": "story:7-clientes/05-marcos-jordao.mp4@arquivo",
+    "quando": "2026-10-11T13:00:00.000Z",
+    "arquivo": "midia/02-destaques/7-clientes/05-marcos-jordao.mp4",
+    "rodada": "arquivo",
+    "aprovado": true
   }
 ]
