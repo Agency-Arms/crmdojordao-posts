@@ -21,8 +21,13 @@ const HIST = ESTADO ? join(RAIZ, "publicados.json") : "";
 const LOG = ESTADO ? join(ESTADO, "log.txt") : join(RAIZ, "log.txt");
 const API = "https://graph.facebook.com/v25.0";
 const JANELA_MIN = 45; // item vencido há mais de 45 min não sai sozinho · cron parado não vira rajada
-const MAX_POR_RODADA = 2; // posts de feed
-const MAX_STORIES_RODADA = 6; // story não aparece no feed, sai em sequência (ex.: montar um destaque)
+// Ritmo de conta nova (06/10: a conta foi suspensa depois de 11 stories em 7 min pela API). Nunca rajada.
+const MAX_POR_RODADA = 1; // posts de feed por rodada
+const MAX_STORIES_RODADA = 1; // stories por rodada
+const INTERVALO_FEED_MIN = 120; // mínimo entre posts de feed, lido do próprio Instagram
+const INTERVALO_STORY_MIN = 30; // mínimo entre stories
+const TETO_FEED_24H = Number(process.env.TETO_FEED_24H || 4); // feed nas últimas 24h
+const TETO_STORIES_24H = Number(process.env.TETO_STORIES_24H || 6); // stories no ar (últimas 24h)
 
 const arquivoLocal = "C:/Users/Mathe/.claude/secrets/ig-crm-jordao.env";
 const local = existsSync(arquivoLocal) ? Object.fromEntries(readFileSync(arquivoLocal, "utf8").split(/\r?\n/).filter((l) => /^\w+=/.test(l)).map((l) => [l.slice(0, l.indexOf("=")), l.slice(l.indexOf("=") + 1).trim()])) : {};
@@ -59,7 +64,7 @@ async function esperarPronto(id) {
     const s = await g(`/${id}`, { fields: "status_code" });
     if (s.status_code === "FINISHED") return;
     if (s.status_code === "ERROR" || s.status_code === "EXPIRED") throw new Error(`container ${id} ${s.status_code}`);
-    await sleep(5000);
+    await sleep(10000); // menos consultas à Meta enquanto o vídeo processa
   }
   throw new Error(`container ${id} não ficou pronto em 5 min`);
 }
@@ -149,8 +154,11 @@ if (cmd === "run") {
   const perfil = await noPerfil();
   const legendasNoAr = new Map(perfil.map((p) => [norm(p.caption), p]));
   let ultimoFeed = perfil.length ? Date.parse(perfil[0].timestamp) : 0;
+  let feed24h = perfil.filter((p) => Date.now() - Date.parse(p.timestamp) < 24 * 3600000).length;
   const temStory = vencidos.some((x) => x.arquivo);
   const stories = temStory ? await storiesNoAr() : [];
+  let ultimoStory = stories.reduce((a, st) => Math.max(a, Date.parse(st.timestamp)), 0);
+  let stories24h = stories.length;
   const idsNossos = new Set(Object.values(feitos).map((v) => v.mediaId).filter(Boolean));
   let feitosNestaRodada = 0, storiesNestaRodada = 0;
   for (const item of vencidos) {
@@ -159,8 +167,11 @@ if (cmd === "run") {
     if (m.tipo !== "story") {
       const igual = legendasNoAr.get(norm(m.legenda));
       if (igual) { feitos[item.id] = { status: "ok", em: new Date().toISOString(), mediaId: igual.id, link: igual.permalink, nota: "já estava no ar · não repostado" }; log(`JA-NO-AR ${item.id} ${igual.permalink}`); writeFileSync(FEITOS, JSON.stringify(feitos, null, 2)); continue; }
-      if (Date.now() - ultimoFeed < 2 * 60000) { console.log("intervalo mínimo entre posts · fica pra próxima rodada"); continue; }
+      if (Date.now() - ultimoFeed < INTERVALO_FEED_MIN * 60000) { console.log("intervalo mínimo entre posts · fica pra próxima rodada"); continue; }
+      if (feed24h >= TETO_FEED_24H) { console.log("teto de posts em 24h · fica pra próxima rodada"); continue; }
     } else {
+      if (Date.now() - ultimoStory < INTERVALO_STORY_MIN * 60000) { console.log("intervalo mínimo entre stories · fica pra próxima rodada"); continue; }
+      if (stories24h >= TETO_STORIES_24H) { console.log("teto de stories em 24h · fica pra próxima rodada"); continue; }
       const solto = stories.find((st) => !idsNossos.has(st.id) && Date.parse(st.timestamp) >= Date.parse(item.quando) - 60000);
       if (solto) { feitos[item.id] = { status: "conferir", em: new Date().toISOString(), mediaId: solto.id, nota: "tem story no ar sem registro depois do horário deste item · não repostado, conferir no perfil" }; log(`CONFERIR ${item.id} story ${solto.id} no ar sem registro`); writeFileSync(FEITOS, JSON.stringify(feitos, null, 2)); continue; }
     }
@@ -170,7 +181,7 @@ if (cmd === "run") {
       writeFileSync(FEITOS, JSON.stringify(feitos, null, 2)); // marca antes: se cair no meio, a checagem do perfil decide
       const r = await publicarIG(item);
       feitos[item.id] = { status: "ok", em: new Date().toISOString(), tentativas: n, ...r };
-      if (m.tipo !== "story") { legendasNoAr.set(norm(m.legenda), { id: r.mediaId, permalink: r.link }); ultimoFeed = Date.now(); }
+      if (m.tipo !== "story") { legendasNoAr.set(norm(m.legenda), { id: r.mediaId, permalink: r.link }); ultimoFeed = Date.now(); feed24h++; } else { ultimoStory = Date.now(); stories24h++; }
       okPorPasta.add(chave(item));
       idsNossos.add(r.mediaId);
       if (m.tipo === "story") storiesNestaRodada++; else feitosNestaRodada++;
