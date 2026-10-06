@@ -21,12 +21,12 @@ const HIST = ESTADO ? join(RAIZ, "publicados.json") : "";
 const LOG = ESTADO ? join(ESTADO, "log.txt") : join(RAIZ, "log.txt");
 const API = "https://graph.facebook.com/v25.0";
 const JANELA_MIN = 45; // item vencido há mais de 45 min não sai sozinho · cron parado não vira rajada
-// Ritmo de conta nova (06/10: a conta foi suspensa depois de 11 stories em 7 min pela API). Nunca rajada.
+// Ritmo (decisão do Matheus 06/10): até 10 posts de feed/dia com ~1h entre eles e até 6 stories/dia com 30 min. A suspensão de 06/10 foi por 11 stories em 7 min. Nunca rajada.
 const MAX_POR_RODADA = 1; // posts de feed por rodada
 const MAX_STORIES_RODADA = 1; // stories por rodada
-const INTERVALO_FEED_MIN = 120; // mínimo entre posts de feed, lido do próprio Instagram
+const INTERVALO_FEED_MIN = 55; // mínimo entre posts de feed, lido do próprio Instagram
 const INTERVALO_STORY_MIN = 30; // mínimo entre stories
-const TETO_FEED_24H = Number(process.env.TETO_FEED_24H || 4); // feed nas últimas 24h
+const TETO_FEED_24H = Number(process.env.TETO_FEED_24H || 10); // feed nas últimas 24h
 const TETO_STORIES_24H = Number(process.env.TETO_STORIES_24H || 6); // stories no ar (últimas 24h)
 
 const arquivoLocal = "C:/Users/Mathe/.claude/secrets/ig-crm-jordao.env";
