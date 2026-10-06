@@ -59,3 +59,4 @@
 2026-10-06T17:03:08.028Z PAUSADO · arquivo PAUSAR existe
 2026-10-06T17:12:20.464Z PAUSADO · arquivo PAUSAR existe
 2026-10-06T17:20:48.424Z PAUSADO · arquivo PAUSAR existe
+2026-10-06T20:19:47.634Z ERRO D1-07h00-meio-frases-que-cansaram@lote1 (tentativa 1/3) /17841424760671838/media_publish: Application request limit reached (code 4)
