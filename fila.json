@@ -461,29 +461,33 @@
     "id": "story:2-por-dentro-v2/03-modo-foco.jpg@arquivo",
     "arquivo": "midia/02-destaques/2-por-dentro-v2/03-modo-foco.jpg",
     "rodada": "arquivo",
-    "aprovado": true,
-    "quando": "2026-10-08T17:00:00.000Z"
+    "aprovado": false,
+    "quando": "2026-10-08T17:00:00.000Z",
+    "obs": "pausado 08/10 a pedido do Matheus: Por dentro vai ser refeito com mais qualidade antes de virar destaque"
   },
   {
     "id": "story:2-por-dentro-v2/04-mentor.jpg@arquivo",
     "arquivo": "midia/02-destaques/2-por-dentro-v2/04-mentor.jpg",
     "rodada": "arquivo",
-    "aprovado": true,
-    "quando": "2026-10-08T18:00:00.000Z"
+    "aprovado": false,
+    "quando": "2026-10-08T18:00:00.000Z",
+    "obs": "pausado 08/10 a pedido do Matheus: Por dentro vai ser refeito com mais qualidade antes de virar destaque"
   },
   {
     "id": "story:2-por-dentro-v2/05-jordao-ia.jpg@arquivo",
     "arquivo": "midia/02-destaques/2-por-dentro-v2/05-jordao-ia.jpg",
     "rodada": "arquivo",
-    "aprovado": true,
-    "quando": "2026-10-08T20:00:00.000Z"
+    "aprovado": false,
+    "quando": "2026-10-08T20:00:00.000Z",
+    "obs": "pausado 08/10 a pedido do Matheus: Por dentro vai ser refeito com mais qualidade antes de virar destaque"
   },
   {
     "id": "story:2-por-dentro-v2/06-raio-x.jpg@arquivo",
     "arquivo": "midia/02-destaques/2-por-dentro-v2/06-raio-x.jpg",
     "rodada": "arquivo",
-    "aprovado": true,
-    "quando": "2026-10-08T23:00:00.000Z"
+    "aprovado": false,
+    "quando": "2026-10-08T23:00:00.000Z",
+    "obs": "pausado 08/10 a pedido do Matheus: Por dentro vai ser refeito com mais qualidade antes de virar destaque"
   },
   {
     "id": "story:3-jordao/01-capa.jpg@arquivo",
