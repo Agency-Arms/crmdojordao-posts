@@ -26,7 +26,7 @@ const MAX_POR_RODADA = 1; // posts de feed por rodada
 const MAX_STORIES_RODADA = 1; // stories por rodada
 const INTERVALO_FEED_MIN = 55; // mínimo entre posts de feed, lido do próprio Instagram
 const INTERVALO_STORY_MIN = 30; // mínimo entre stories
-const TETO_FEED_24H = Number(process.env.TETO_FEED_24H || 10); // feed nas últimas 24h
+const TETO_FEED_24H = Number(process.env.TETO_FEED_24H || 12); // feed nas últimas 24h
 const TETO_STORIES_24H = Number(process.env.TETO_STORIES_24H || 6); // stories no ar (últimas 24h)
 
 const arquivoLocal = "C:/Users/Mathe/.claude/secrets/ig-crm-jordao.env";
