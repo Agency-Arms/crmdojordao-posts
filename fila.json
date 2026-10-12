@@ -841,5 +841,11 @@
     "quando": "2026-10-14T16:15:00.000Z",
     "pasta": "midia/06-lote-3/corte-persistencia-ou-replay",
     "aprovado": true
+  },
+  {
+    "id": "corte-follow-up-antes-da-proposta@lote3",
+    "quando": "2026-10-14T20:00:00.000Z",
+    "pasta": "midia/06-lote-3/corte-follow-up-antes-da-proposta",
+    "aprovado": true
   }
 ]
