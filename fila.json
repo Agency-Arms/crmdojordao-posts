@@ -817,5 +817,11 @@
     "quando": "2026-10-15T13:45:00.000Z",
     "pasta": "midia/06-lote-3/E03-retro-vendedor-odeia-crm",
     "aprovado": true
+  },
+  {
+    "id": "corte-pare-de-mandar-proposta@lote3",
+    "quando": "2026-10-13T16:15:00.000Z",
+    "pasta": "midia/06-lote-3/corte-pare-de-mandar-proposta",
+    "aprovado": true
   }
 ]
