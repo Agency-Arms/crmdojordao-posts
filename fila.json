@@ -847,5 +847,11 @@
     "quando": "2026-10-14T20:00:00.000Z",
     "pasta": "midia/06-lote-3/corte-follow-up-antes-da-proposta",
     "aprovado": true
+  },
+  {
+    "id": "corte-que-cinderela@lote3",
+    "quando": "2026-10-14T23:45:00.000Z",
+    "pasta": "midia/06-lote-3/corte-que-cinderela",
+    "aprovado": true
   }
 ]
