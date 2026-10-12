@@ -853,5 +853,23 @@
     "quando": "2026-10-14T23:45:00.000Z",
     "pasta": "midia/06-lote-3/corte-que-cinderela",
     "aprovado": true
+  },
+  {
+    "id": "corte-crm-e-um-a-um@lote3",
+    "quando": "2026-10-15T16:15:00.000Z",
+    "pasta": "midia/06-lote-3/corte-crm-e-um-a-um",
+    "aprovado": true
+  },
+  {
+    "id": "corte-pior-feedback@lote3",
+    "quando": "2026-10-15T20:00:00.000Z",
+    "pasta": "midia/06-lote-3/corte-pior-feedback",
+    "aprovado": true
+  },
+  {
+    "id": "corte-silencio-do-cliente@lote3",
+    "quando": "2026-10-15T23:45:00.000Z",
+    "pasta": "midia/06-lote-3/corte-silencio-do-cliente",
+    "aprovado": true
   }
 ]
