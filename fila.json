@@ -787,5 +787,23 @@
     "quando": "2026-10-12T17:00:00.000Z",
     "pasta": "midia/05-lote-2/D4-14h00-topo-reel-almoco-de-vendedor",
     "aprovado": true
+  },
+  {
+    "id": "E04-caderno-melhor-vendedor-saiu@lote3",
+    "quando": "2026-10-12T18:45:00.000Z",
+    "pasta": "midia/06-lote-3/E04-caderno-melhor-vendedor-saiu",
+    "aprovado": true
+  },
+  {
+    "id": "corte-voce-fez-tudo@lote3",
+    "quando": "2026-10-12T21:15:00.000Z",
+    "pasta": "midia/06-lote-3/corte-voce-fez-tudo",
+    "aprovado": true
+  },
+  {
+    "id": "E09-manifesto-movimento@lote3",
+    "quando": "2026-10-13T13:45:00.000Z",
+    "pasta": "midia/06-lote-3/E09-manifesto-movimento",
+    "aprovado": true
   }
 ]
