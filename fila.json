@@ -805,5 +805,17 @@
     "quando": "2026-10-13T13:45:00.000Z",
     "pasta": "midia/06-lote-3/E09-manifesto-movimento",
     "aprovado": true
+  },
+  {
+    "id": "E01-revista-gerente-nao-e-cobrador@lote3",
+    "quando": "2026-10-14T13:45:00.000Z",
+    "pasta": "midia/06-lote-3/E01-revista-gerente-nao-e-cobrador",
+    "aprovado": true
+  },
+  {
+    "id": "E03-retro-vendedor-odeia-crm@lote3",
+    "quando": "2026-10-15T13:45:00.000Z",
+    "pasta": "midia/06-lote-3/E03-retro-vendedor-odeia-crm",
+    "aprovado": true
   }
 ]
