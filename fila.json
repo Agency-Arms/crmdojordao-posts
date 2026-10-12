@@ -823,5 +823,17 @@
     "quando": "2026-10-13T16:15:00.000Z",
     "pasta": "midia/06-lote-3/corte-pare-de-mandar-proposta",
     "aprovado": true
+  },
+  {
+    "id": "corte-ninguem-respondeu@lote3",
+    "quando": "2026-10-13T20:00:00.000Z",
+    "pasta": "midia/06-lote-3/corte-ninguem-respondeu",
+    "aprovado": true
+  },
+  {
+    "id": "corte-voce-tem-orcamento@lote3",
+    "quando": "2026-10-13T23:45:00.000Z",
+    "pasta": "midia/06-lote-3/corte-voce-tem-orcamento",
+    "aprovado": true
   }
 ]
