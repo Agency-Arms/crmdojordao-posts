@@ -835,5 +835,11 @@
     "quando": "2026-10-13T23:45:00.000Z",
     "pasta": "midia/06-lote-3/corte-voce-tem-orcamento",
     "aprovado": true
+  },
+  {
+    "id": "corte-persistencia-ou-replay@lote3",
+    "quando": "2026-10-14T16:15:00.000Z",
+    "pasta": "midia/06-lote-3/corte-persistencia-ou-replay",
+    "aprovado": true
   }
 ]
