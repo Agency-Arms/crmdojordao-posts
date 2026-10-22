@@ -871,5 +871,17 @@
     "quando": "2026-10-15T23:45:00.000Z",
     "pasta": "midia/06-lote-3/corte-silencio-do-cliente",
     "aprovado": true
+  },
+  {
+    "id": "E07-documentario-75-empresas@lote3",
+    "quando": "2026-10-22T13:45:00.000Z",
+    "pasta": "midia/06-lote-3/E07-documentario-75-empresas",
+    "aprovado": true
+  },
+  {
+    "id": "E05-ao-vivo-crm-escuta-a-reuniao@lote3",
+    "quando": "2026-10-23T13:45:00.000Z",
+    "pasta": "midia/06-lote-3/E05-ao-vivo-crm-escuta-a-reuniao",
+    "aprovado": true
   }
 ]
