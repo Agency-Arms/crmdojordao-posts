@@ -1009,5 +1009,29 @@
     "quando": "2026-10-28T22:00:00.000Z",
     "arquivo": "midia/08-stories/2026-10-28-19h-material.jpg",
     "aprovado": true
+  },
+  {
+    "id": "corte-olhe-a-empresa@lote3",
+    "quando": "2026-10-22T16:15:00.000Z",
+    "pasta": "midia/06-lote-3/corte-olhe-a-empresa",
+    "aprovado": true
+  },
+  {
+    "id": "corte-acho-que-fecha@lote3",
+    "quando": "2026-10-22T20:00:00.000Z",
+    "pasta": "midia/06-lote-3/corte-acho-que-fecha",
+    "aprovado": true
+  },
+  {
+    "id": "corte-joao-ou-maria@lote3",
+    "quando": "2026-10-22T23:45:00.000Z",
+    "pasta": "midia/06-lote-3/corte-joao-ou-maria",
+    "aprovado": true
+  },
+  {
+    "id": "corte-mereca-cobrar@lote3",
+    "quando": "2026-10-23T16:15:00.000Z",
+    "pasta": "midia/06-lote-3/corte-mereca-cobrar",
+    "aprovado": true
   }
 ]
