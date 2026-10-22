@@ -1033,5 +1033,53 @@
     "quando": "2026-10-23T16:15:00.000Z",
     "pasta": "midia/06-lote-3/corte-mereca-cobrar",
     "aprovado": true
+  },
+  {
+    "id": "story:a02-eles-aprenderam-com-ele@destaques2",
+    "quando": "2026-10-22T14:30:00.000Z",
+    "arquivo": "midia/09-destaques-novos/a02-eles-aprenderam-com-ele.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:d22-marcelo@destaques2",
+    "quando": "2026-10-23T00:45:00.000Z",
+    "arquivo": "midia/09-destaques-novos/d22-marcelo.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:a03-em-uma-frase@destaques2",
+    "quando": "2026-10-23T14:30:00.000Z",
+    "arquivo": "midia/09-destaques-novos/a03-em-uma-frase.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:d23-marcos@destaques2",
+    "quando": "2026-10-24T00:45:00.000Z",
+    "arquivo": "midia/09-destaques-novos/d23-marcos.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:a04-quem-entende-de-venda@destaques2",
+    "quando": "2026-10-24T14:30:00.000Z",
+    "arquivo": "midia/09-destaques-novos/a04-quem-entende-de-venda.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:d24-quem-usa-conta@destaques2",
+    "quando": "2026-10-25T00:45:00.000Z",
+    "arquivo": "midia/09-destaques-novos/d24-quem-usa-conta.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:a05-joel@destaques2",
+    "quando": "2026-10-25T14:30:00.000Z",
+    "arquivo": "midia/09-destaques-novos/a05-joel.mp4",
+    "aprovado": true
+  },
+  {
+    "id": "story:a06-dener@destaques2",
+    "quando": "2026-10-26T00:45:00.000Z",
+    "arquivo": "midia/09-destaques-novos/a06-dener.mp4",
+    "aprovado": true
   }
 ]
