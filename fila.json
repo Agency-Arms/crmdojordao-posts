@@ -1084,128 +1084,146 @@
   },
   {
     "id": "D1-09h15-topo-corte-funil-vazio@lote4",
-    "quando": "2026-11-06T12:15:00.000Z",
+    "quando": "2026-11-05T12:15:00.000Z",
     "pasta": "midia/07-lote-4/D1-09h15-topo-corte-funil-vazio",
     "aprovado": true
   },
   {
     "id": "D1-13h15-produto-v13-esqueceu-o-follow-up@lote4",
-    "quando": "2026-11-06T16:15:00.000Z",
+    "quando": "2026-11-05T16:15:00.000Z",
     "pasta": "midia/07-lote-4/D1-13h15-produto-v13-esqueceu-o-follow-up",
     "aprovado": true
   },
   {
     "id": "D1-18h15-fundo-bf-sem-desconto@lote4",
-    "quando": "2026-11-06T21:15:00.000Z",
+    "quando": "2026-11-04T21:15:00.000Z",
     "pasta": "midia/07-lote-4/D1-18h15-fundo-bf-sem-desconto",
     "aprovado": true
   },
   {
     "id": "D2-09h15-topo-corte-agenda@lote4",
-    "quando": "2026-11-07T12:15:00.000Z",
+    "quando": "2026-11-06T12:15:00.000Z",
     "pasta": "midia/07-lote-4/D2-09h15-topo-corte-agenda",
     "aprovado": true
   },
   {
     "id": "D2-13h15-produto-crm-le-a-conversa@lote4",
-    "quando": "2026-11-07T16:15:00.000Z",
+    "quando": "2026-11-06T16:15:00.000Z",
     "pasta": "midia/07-lote-4/D2-13h15-produto-crm-le-a-conversa",
     "aprovado": true
   },
   {
     "id": "D2-18h15-fundo-depoimento-marcelo@lote4",
-    "quando": "2026-11-07T21:15:00.000Z",
+    "quando": "2026-11-06T21:15:00.000Z",
     "pasta": "midia/07-lote-4/D2-18h15-fundo-depoimento-marcelo",
     "aprovado": true
   },
   {
     "id": "D3-09h15-topo-corte-seja-interessado@lote4",
-    "quando": "2026-11-08T12:15:00.000Z",
+    "quando": "2026-11-07T12:15:00.000Z",
     "pasta": "midia/07-lote-4/D3-09h15-topo-corte-seja-interessado",
     "aprovado": true
   },
   {
     "id": "D3-13h15-produto-v14-telefone-do-dono@lote4",
-    "quando": "2026-11-08T16:15:00.000Z",
+    "quando": "2026-11-07T16:15:00.000Z",
     "pasta": "midia/07-lote-4/D3-13h15-produto-v14-telefone-do-dono",
     "aprovado": true
   },
   {
     "id": "D3-18h15-fundo-depoimento-audio-marcos@lote4",
-    "quando": "2026-11-08T21:15:00.000Z",
+    "quando": "2026-11-07T21:15:00.000Z",
     "pasta": "midia/07-lote-4/D3-18h15-fundo-depoimento-audio-marcos",
     "aprovado": true
   },
   {
     "id": "D4-09h15-topo-corte-abrir-reuniao@lote4",
-    "quando": "2026-11-09T12:15:00.000Z",
+    "quando": "2026-11-08T12:15:00.000Z",
     "pasta": "midia/07-lote-4/D4-09h15-topo-corte-abrir-reuniao",
     "aprovado": true
   },
   {
     "id": "D4-13h15-produto-jordao-ia@lote4",
-    "quando": "2026-11-09T16:15:00.000Z",
+    "quando": "2026-11-08T16:15:00.000Z",
     "pasta": "midia/07-lote-4/D4-13h15-produto-jordao-ia",
     "aprovado": true
   },
   {
     "id": "D4-18h15-fundo-bf-janeiro-e-julho@lote4",
-    "quando": "2026-11-09T21:15:00.000Z",
+    "quando": "2026-11-08T21:15:00.000Z",
     "pasta": "midia/07-lote-4/D4-18h15-fundo-bf-janeiro-e-julho",
     "aprovado": true
   },
   {
     "id": "D5-09h15-topo-corte-ta-caro@lote4",
-    "quando": "2026-11-10T12:15:00.000Z",
+    "quando": "2026-11-09T12:15:00.000Z",
     "pasta": "midia/07-lote-4/D5-09h15-topo-corte-ta-caro",
     "aprovado": true
   },
   {
     "id": "D5-13h15-produto-ia-no-whatsapp@lote4",
-    "quando": "2026-11-10T16:15:00.000Z",
+    "quando": "2026-11-09T16:15:00.000Z",
     "pasta": "midia/07-lote-4/D5-13h15-produto-ia-no-whatsapp",
     "aprovado": true
   },
   {
     "id": "D5-18h15-fundo-depoimento-quem-usa-conta@lote4",
-    "quando": "2026-11-10T21:15:00.000Z",
+    "quando": "2026-11-09T21:15:00.000Z",
     "pasta": "midia/07-lote-4/D5-18h15-fundo-depoimento-quem-usa-conta",
     "aprovado": true
   },
   {
     "id": "D6-09h15-topo-corte-gestor@lote4",
-    "quando": "2026-11-11T12:15:00.000Z",
+    "quando": "2026-11-10T12:15:00.000Z",
     "pasta": "midia/07-lote-4/D6-09h15-topo-corte-gestor",
     "aprovado": true
   },
   {
     "id": "D6-13h15-produto-modo-foco@lote4",
-    "quando": "2026-11-11T16:15:00.000Z",
+    "quando": "2026-11-10T16:15:00.000Z",
     "pasta": "midia/07-lote-4/D6-13h15-produto-modo-foco",
     "aprovado": true
   },
   {
     "id": "D6-18h15-fundo-depoimento-ia-na-proposta@lote4",
-    "quando": "2026-11-11T21:15:00.000Z",
+    "quando": "2026-11-10T21:15:00.000Z",
     "pasta": "midia/07-lote-4/D6-18h15-fundo-depoimento-ia-na-proposta",
     "aprovado": true
   },
   {
     "id": "D7-09h15-fundo-material-playbook-meta@lote4",
-    "quando": "2026-11-12T12:15:00.000Z",
+    "quando": "2026-11-11T12:15:00.000Z",
     "pasta": "midia/07-lote-4/D7-09h15-fundo-material-playbook-meta",
     "aprovado": true
   },
   {
     "id": "D7-13h15-produto-de-onde-vem-a-sugestao@lote4",
-    "quando": "2026-11-12T16:15:00.000Z",
+    "quando": "2026-11-11T16:15:00.000Z",
     "pasta": "midia/07-lote-4/D7-13h15-produto-de-onde-vem-a-sugestao",
     "aprovado": true
   },
   {
     "id": "D7-18h15-fundo-bf-ja-e-cliente@lote4",
-    "quando": "2026-11-12T21:15:00.000Z",
+    "quando": "2026-11-11T21:15:00.000Z",
     "pasta": "midia/07-lote-4/D7-18h15-fundo-bf-ja-e-cliente",
+    "aprovado": true
+  },
+  {
+    "id": "story:2026-11-05-frase@lote4",
+    "quando": "2026-11-05T13:30:00.000Z",
+    "arquivo": "midia/08-stories-lote-4/2026-11-05-10h30-frase.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:2026-11-05-checklist@lote4",
+    "quando": "2026-11-05T18:30:00.000Z",
+    "arquivo": "midia/08-stories-lote-4/2026-11-05-15h30-checklist.jpg",
+    "aprovado": true
+  },
+  {
+    "id": "story:2026-11-04-bf@lote4",
+    "quando": "2026-11-04T23:30:00.000Z",
+    "arquivo": "midia/08-stories-lote-4/2026-11-04-20h30-bf.jpg",
     "aprovado": true
   },
   {
@@ -1221,9 +1239,9 @@
     "aprovado": true
   },
   {
-    "id": "story:2026-11-06-bf@lote4",
+    "id": "story:2026-11-06-material@lote4",
     "quando": "2026-11-06T23:30:00.000Z",
-    "arquivo": "midia/08-stories-lote-4/2026-11-06-20h30-bf.jpg",
+    "arquivo": "midia/08-stories-lote-4/2026-11-06-20h30-material.jpg",
     "aprovado": true
   },
   {
@@ -1239,9 +1257,9 @@
     "aprovado": true
   },
   {
-    "id": "story:2026-11-07-material@lote4",
+    "id": "story:2026-11-07-bf@lote4",
     "quando": "2026-11-07T23:30:00.000Z",
-    "arquivo": "midia/08-stories-lote-4/2026-11-07-20h30-material.jpg",
+    "arquivo": "midia/08-stories-lote-4/2026-11-07-20h30-bf.jpg",
     "aprovado": true
   },
   {
@@ -1257,9 +1275,9 @@
     "aprovado": true
   },
   {
-    "id": "story:2026-11-08-bf@lote4",
+    "id": "story:2026-11-08-material@lote4",
     "quando": "2026-11-08T23:30:00.000Z",
-    "arquivo": "midia/08-stories-lote-4/2026-11-08-20h30-bf.jpg",
+    "arquivo": "midia/08-stories-lote-4/2026-11-08-20h30-material.jpg",
     "aprovado": true
   },
   {
@@ -1275,9 +1293,9 @@
     "aprovado": true
   },
   {
-    "id": "story:2026-11-09-material@lote4",
+    "id": "story:2026-11-09-bf@lote4",
     "quando": "2026-11-09T23:30:00.000Z",
-    "arquivo": "midia/08-stories-lote-4/2026-11-09-20h30-material.jpg",
+    "arquivo": "midia/08-stories-lote-4/2026-11-09-20h30-bf.jpg",
     "aprovado": true
   },
   {
@@ -1293,9 +1311,9 @@
     "aprovado": true
   },
   {
-    "id": "story:2026-11-10-bf@lote4",
+    "id": "story:2026-11-10-material@lote4",
     "quando": "2026-11-10T23:30:00.000Z",
-    "arquivo": "midia/08-stories-lote-4/2026-11-10-20h30-bf.jpg",
+    "arquivo": "midia/08-stories-lote-4/2026-11-10-20h30-material.jpg",
     "aprovado": true
   },
   {
@@ -1311,27 +1329,9 @@
     "aprovado": true
   },
   {
-    "id": "story:2026-11-11-material@lote4",
+    "id": "story:2026-11-11-bf@lote4",
     "quando": "2026-11-11T23:30:00.000Z",
-    "arquivo": "midia/08-stories-lote-4/2026-11-11-20h30-material.jpg",
-    "aprovado": true
-  },
-  {
-    "id": "story:2026-11-12-frase@lote4",
-    "quando": "2026-11-12T13:30:00.000Z",
-    "arquivo": "midia/08-stories-lote-4/2026-11-12-10h30-frase.jpg",
-    "aprovado": true
-  },
-  {
-    "id": "story:2026-11-12-checklist@lote4",
-    "quando": "2026-11-12T18:30:00.000Z",
-    "arquivo": "midia/08-stories-lote-4/2026-11-12-15h30-checklist.jpg",
-    "aprovado": true
-  },
-  {
-    "id": "story:2026-11-12-bf@lote4",
-    "quando": "2026-11-12T23:30:00.000Z",
-    "arquivo": "midia/08-stories-lote-4/2026-11-12-20h30-bf.jpg",
+    "arquivo": "midia/08-stories-lote-4/2026-11-11-20h30-bf.jpg",
     "aprovado": true
   }
 ]
