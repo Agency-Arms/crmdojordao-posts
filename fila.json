@@ -1459,5 +1459,221 @@
     "quando": "2026-11-18T21:15:00.000Z",
     "pasta": "midia/10-lote-5/D7-18h15-fundo-planilha",
     "aprovado": true
+  },
+  {
+    "id": "N19-09h15-topo-reel-agenda@lote6",
+    "quando": "2026-11-19T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N19-09h15-topo-reel-agenda",
+    "aprovado": true
+  },
+  {
+    "id": "N19-13h15-meio-silencio-do-cliente@lote6",
+    "quando": "2026-11-19T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N19-13h15-meio-silencio-do-cliente",
+    "aprovado": true
+  },
+  {
+    "id": "N19-18h15-fundo-ja-tenho-crm@lote6",
+    "quando": "2026-11-19T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N19-18h15-fundo-ja-tenho-crm",
+    "aprovado": true
+  },
+  {
+    "id": "N20-09h15-topo-funil-vazio@lote6",
+    "quando": "2026-11-20T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N20-09h15-topo-funil-vazio",
+    "aprovado": true
+  },
+  {
+    "id": "N20-13h15-meio-10-jeitos-parte-1@lote6",
+    "quando": "2026-11-20T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N20-13h15-meio-10-jeitos-parte-1",
+    "aprovado": true
+  },
+  {
+    "id": "N20-18h15-fundo-reel-pra-que-1-a-1@lote6",
+    "quando": "2026-11-20T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N20-18h15-fundo-reel-pra-que-1-a-1",
+    "aprovado": true
+  },
+  {
+    "id": "N21-09h15-topo-reel-massa-nao-e-venda@lote6",
+    "quando": "2026-11-21T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N21-09h15-topo-reel-massa-nao-e-venda",
+    "aprovado": true
+  },
+  {
+    "id": "N21-13h15-meio-calendario-do-cliente@lote6",
+    "quando": "2026-11-21T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N21-13h15-meio-calendario-do-cliente",
+    "aprovado": true
+  },
+  {
+    "id": "N21-18h15-fundo-janeiro-e-julho@lote6",
+    "quando": "2026-11-21T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N21-18h15-fundo-janeiro-e-julho",
+    "aprovado": true
+  },
+  {
+    "id": "N22-09h15-topo-segunda-feira@lote6",
+    "quando": "2026-11-22T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N22-09h15-topo-segunda-feira",
+    "aprovado": true
+  },
+  {
+    "id": "N22-13h15-meio-10-jeitos-parte-2@lote6",
+    "quando": "2026-11-22T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N22-13h15-meio-10-jeitos-parte-2",
+    "aprovado": true
+  },
+  {
+    "id": "N22-18h15-fundo-quem-usa-conta@lote6",
+    "quando": "2026-11-22T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N22-18h15-fundo-quem-usa-conta",
+    "aprovado": true
+  },
+  {
+    "id": "N23-09h15-topo-o-nao@lote6",
+    "quando": "2026-11-23T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N23-09h15-topo-o-nao",
+    "aprovado": true
+  },
+  {
+    "id": "N23-13h15-meio-6-perguntas-do-forecast@lote6",
+    "quando": "2026-11-23T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N23-13h15-meio-6-perguntas-do-forecast",
+    "aprovado": true
+  },
+  {
+    "id": "N23-18h15-fundo-faz-a-conta@lote6",
+    "quando": "2026-11-23T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N23-18h15-fundo-faz-a-conta",
+    "aprovado": true
+  },
+  {
+    "id": "N24-09h15-topo-reel-persistencia@lote6",
+    "quando": "2026-11-24T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N24-09h15-topo-reel-persistencia",
+    "aprovado": true
+  },
+  {
+    "id": "N24-13h15-fundo-item-por-item@lote6",
+    "quando": "2026-11-24T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N24-13h15-fundo-item-por-item",
+    "aprovado": true
+  },
+  {
+    "id": "N24-18h15-fundo-time-palestra@lote6",
+    "quando": "2026-11-24T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N24-18h15-fundo-time-palestra",
+    "aprovado": true
+  },
+  {
+    "id": "N25-09h15-topo-reel-olha-a-conversao@lote6",
+    "quando": "2026-11-25T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N25-09h15-topo-reel-olha-a-conversao",
+    "aprovado": true
+  },
+  {
+    "id": "N25-13h15-fundo-meu-time-nao-vai-usar@lote6",
+    "quando": "2026-11-25T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N25-13h15-fundo-meu-time-nao-vai-usar",
+    "aprovado": true
+  },
+  {
+    "id": "N25-18h15-fundo-lider-treinador@lote6",
+    "quando": "2026-11-25T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N25-18h15-fundo-lider-treinador",
+    "aprovado": true
+  },
+  {
+    "id": "N26-09h15-topo-reel-de-onde-sai-o-orcamento@lote6",
+    "quando": "2026-11-26T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N26-09h15-topo-reel-de-onde-sai-o-orcamento",
+    "aprovado": true
+  },
+  {
+    "id": "N26-13h15-fundo-ta-caro@lote6",
+    "quando": "2026-11-26T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N26-13h15-fundo-ta-caro",
+    "aprovado": true
+  },
+  {
+    "id": "N26-18h15-fundo-ja-e-cliente@lote6",
+    "quando": "2026-11-26T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N26-18h15-fundo-ja-e-cliente",
+    "aprovado": true
+  },
+  {
+    "id": "N27-09h15-fundo-black-friday-o-mes-todo@lote6",
+    "quando": "2026-11-27T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N27-09h15-fundo-black-friday-o-mes-todo",
+    "aprovado": true
+  },
+  {
+    "id": "N27-13h15-fundo-por-que-um-ano@lote6",
+    "quando": "2026-11-27T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N27-13h15-fundo-por-que-um-ano",
+    "aprovado": true
+  },
+  {
+    "id": "N27-18h15-fundo-reel-a-oferta@lote6",
+    "quando": "2026-11-27T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N27-18h15-fundo-reel-a-oferta",
+    "aprovado": true
+  },
+  {
+    "id": "N28-09h15-topo-treinam-todos-os-dias@lote6",
+    "quando": "2026-11-28T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N28-09h15-topo-treinam-todos-os-dias",
+    "aprovado": true
+  },
+  {
+    "id": "N28-13h15-fundo-vaga-no-curso@lote6",
+    "quando": "2026-11-28T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N28-13h15-fundo-vaga-no-curso",
+    "aprovado": true
+  },
+  {
+    "id": "N28-18h15-fundo-jordao-ia-no-seu-dia@lote6",
+    "quando": "2026-11-28T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N28-18h15-fundo-jordao-ia-no-seu-dia",
+    "aprovado": true
+  },
+  {
+    "id": "N29-09h15-topo-5-frases@lote6",
+    "quando": "2026-11-29T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N29-09h15-topo-5-frases",
+    "aprovado": true
+  },
+  {
+    "id": "N29-13h15-fundo-duvidas-da-oferta@lote6",
+    "quando": "2026-11-29T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N29-13h15-fundo-duvidas-da-oferta",
+    "aprovado": true
+  },
+  {
+    "id": "N29-18h15-fundo-ate-amanha@lote6",
+    "quando": "2026-11-29T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N29-18h15-fundo-ate-amanha",
+    "aprovado": true
+  },
+  {
+    "id": "N30-09h15-fundo-ultimo-dia@lote6",
+    "quando": "2026-11-30T12:15:00.000Z",
+    "pasta": "midia/11-lote-6/N30-09h15-fundo-ultimo-dia",
+    "aprovado": true
+  },
+  {
+    "id": "N30-13h15-fundo-seu-2027@lote6",
+    "quando": "2026-11-30T16:15:00.000Z",
+    "pasta": "midia/11-lote-6/N30-13h15-fundo-seu-2027",
+    "aprovado": true
+  },
+  {
+    "id": "N30-18h15-fundo-acaba-hoje@lote6",
+    "quando": "2026-11-30T21:15:00.000Z",
+    "pasta": "midia/11-lote-6/N30-18h15-fundo-acaba-hoje",
+    "aprovado": true
   }
 ]
